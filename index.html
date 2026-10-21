@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>iPrime Manaus | iPhones novos e seminovos</title>
+  <meta name="description" content="iPhone 17, iPhone Air, iPhone 16 e seminovos com garantia. 10% OFF no Pix e 12x sem juros.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+  <header id="header" class="header"></header>
+
+  <main>
+    <!-- Banners rotativos -->
+    <section class="container hero-wrap">
+      <div class="hero" aria-roledescription="carrossel">
+        <a class="slide slide-img" href="#novidades" aria-label="Conheça as novidades da loja">
+          <picture>
+            <source media="(max-width: 680px)" srcset="img/banner-mobile.webp">
+            <img src="img/banner-desktop.webp" alt="iPrime Manaus — Conheça as novidades da loja" width="1920" height="700">
+          </picture>
+        </a>
+        <div class="slide slide-1">
+          <div class="slide-text">
+            <span class="eyebrow">Lançamento</span>
+            <h1>iPhone 17 Pro</h1>
+            <p>Titânio. Câmeras Pro de 48 MP. O mais poderoso de todos.</p>
+            <div class="slide-price"><small>a partir de</small><b>R$ 9.449</b><span>no Pix ou 12x de R$ 874,92</span></div>
+            <a class="btn btn-light" href="produto.html?id=iphone-17-pro">Comprar agora</a>
+          </div>
+          <div class="slide-art"><div class="ph ph-back" data-phone="pro,laranja"></div><div class="ph ph-front" data-phone="pro,laranja,front"></div></div>
+        </div>
+        <div class="slide slide-2">
+          <div class="slide-text">
+            <span class="eyebrow">Novo</span>
+            <h1>iPhone Air</h1>
+            <p>5,6 mm de pura leveza. O iPhone mais fino já feito.</p>
+            <div class="slide-price"><small>a partir de</small><b>R$ 8.549</b><span>no Pix ou 12x de R$ 791,58</span></div>
+            <a class="btn btn-dark" href="produto.html?id=iphone-air">Conhecer</a>
+          </div>
+          <div class="slide-art"><div class="ph ph-back" data-phone="air,azulceu"></div><div class="ph ph-front" data-phone="air,dourado,front"></div></div>
+        </div>
+        <button class="hero-nav prev" id="prevSlide" aria-label="Banner anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m15 6-6 6 6 6"/></svg></button>
+        <button class="hero-nav next" id="nextSlide" aria-label="Próximo banner"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m9 6 6 6-6 6"/></svg></button>
+        <div class="dots" id="dots"></div>
+      </div>
+    </section>
+
+    <!-- Pagamento e benefícios -->
+    <section class="container">
+      <div class="benefits">
+        <div class="benefit"><span class="b-ico pix"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="m12 3 9 9-9 9-9-9z"/><path d="m8 12 4-4 4 4-4 4z"/></svg></span><div><b>10% OFF no Pix</b><small>Desconto na hora</small></div></div>
+        <div class="benefit"><span class="b-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h4"/></svg></span><div><b>12x sem juros</b><small>Em todos os cartões</small></div></div>
+        <div class="benefit"><span class="b-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></span><div><b>Garantia + nota fiscal</b><small>Novos e seminovos</small></div></div>
+        <div class="benefit"><span class="b-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M3 6h11v10H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg></span><div><b>Entrega em até 3h</b><small>Toda Manaus</small></div></div>
+      </div>
+    </section>
+
+    <!-- Categorias -->
+    <section class="container section-sm">
+      <div class="cats" id="cats"></div>
+    </section>
+
+    <!-- Novidades -->
+    <section class="container section reveal" id="novidades">
+      <div class="sec-head"><div><span class="eyebrow dark">Acabou de chegar</span><h2>Novidades da loja</h2></div><a class="link" href="#vitrine">Ver todos</a></div>
+      <div class="grid" id="newGrid"></div>
+    </section>
+
+    <!-- Mais vendidos -->
+    <section class="section band reveal" id="maisvendidos">
+      <div class="container">
+        <div class="sec-head"><div><span class="eyebrow hot">🔥 Em alta</span><h2>Mais vendidos</h2></div>
+          <div class="rail-nav"><button data-rail="-1" aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m15 6-6 6 6 6"/></svg></button><button data-rail="1" aria-label="Próximo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m9 6 6 6-6 6"/></svg></button></div>
+        </div>
+        <div class="rail" id="hotRail"></div>
+      </div>
+    </section>
+
+    <!-- Banner promocional -->
+    <section class="container section reveal" id="trade">
+      <div class="promo">
+        <div class="promo-text">
+          <span class="eyebrow">Troque seu iPhone</span>
+          <h2>Seu iPhone antigo vale desconto no novo</h2>
+          <p>Avaliação na hora, pagamento da diferença no Pix ou em até 12x.</p>
+          <div class="trade-box">
+            <label for="tradeModel">Seu modelo</label>
+            <div class="trade-row"><select id="tradeModel"></select><span class="trade-val" id="tradeVal"></span></div>
+            <a class="btn btn-light" id="tradeBtn" target="_blank" rel="noopener">Avaliar no WhatsApp</a>
+          </div>
+        </div>
+        <div class="promo-art"><div class="ph" data-phone="base,ultramar"></div><span class="swap-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4 3 8l4 4M3 8h14M17 20l4-4-4-4M21 16H7"/></svg></span><div class="ph" data-phone="pro,azulprof"></div></div>
+      </div>
+    </section>
+
+    <!-- Vitrine completa -->
+    <section class="container section reveal" id="vitrine">
+      <div class="sec-head"><div><span class="eyebrow dark">Novos e lacrados</span><h2>Todos os iPhones</h2></div></div>
+      <div class="filters" id="filters">
+        <button data-f="all">Todos</button><button data-f="17">iPhone 17</button><button data-f="Air">iPhone Air</button><button data-f="16">iPhone 16</button><button data-f="16e">iPhone 16e</button><button data-f="15">iPhone 15</button>
+      </div>
+      <div class="grid" id="showGrid"></div>
+    </section>
+
+    <!-- Seminovos -->
+    <section class="section band reveal" id="seminovos">
+      <div class="container">
+        <div class="sec-head"><div><span class="eyebrow green">Revisados em 40 pontos</span><h2>Seminovos com procedência</h2></div><p class="sec-note">Bateria acima de 85% • Garantia de 6 meses • Nota fiscal</p></div>
+        <div class="grid" id="semiGrid"></div>
+      </div>
+    </section>
+
+    <!-- Confiança -->
+    <section class="container section reveal">
+      <div class="trust">
+        <div class="stat"><b>+12 mil</b><span>clientes atendidos</span></div>
+        <div class="stat"><b>4,9 ★</b><span>no Google (1.800 avaliações)</span></div>
+        <div class="stat"><b>8 anos</b><span>no mercado Apple</span></div>
+        <div class="stat"><b>100%</b><span>com nota fiscal</span></div>
+      </div>
+    </section>
+
+    <!-- Instagram -->
+    <section class="container section reveal" id="instagram">
+      <div class="sec-head center"><div><span class="eyebrow dark">@iprimemanaus</span><h2>Siga a gente no Instagram</h2><p class="sec-note">Lançamentos, ofertas relâmpago e bastidores da loja.</p></div></div>
+      <div class="ig-grid" id="igGrid"></div>
+      <div class="center mt"><a class="btn btn-ig" href="https://instagram.com/iprimemanaus" target="_blank" rel="noopener">Seguir @iprimemanaus</a></div>
+    </section>
+
+    <!-- Como chegar -->
+    <section class="container section reveal" id="loja">
+      <div class="store">
+        <div class="store-info">
+          <span class="eyebrow dark">Loja física</span>
+          <h2>Venha conhecer a iPrime Manaus</h2>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span><b>Endereço</b>Av. Djalma Batista, 1661 — Chapada, Manaus/AM</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span><b>Horário</b>Seg a Sex 9h–19h • Sáb 9h–14h</span></li>
+          </ul>
+          <div class="store-btns">
+            <a class="btn btn-dark" href="https://maps.google.com/?q=Av.+Djalma+Batista,+1661,+Manaus" target="_blank" rel="noopener">Abrir no Maps</a>
+            <a class="btn btn-ghost" href="https://wa.me/5592999999999" target="_blank" rel="noopener">Falar com a loja</a>
+          </div>
+        </div>
+        <div class="map"><iframe title="Mapa da loja" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Av.+Djalma+Batista,+1661,+Manaus&output=embed"></iframe></div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer"></footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

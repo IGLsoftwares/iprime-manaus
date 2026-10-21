@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Produto | iPrime Manaus</title>
+  <meta name="theme-color" content="#ffffff">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="product">
+  <header id="header" class="header"></header>
+
+  <main class="container">
+    <nav class="crumbs" aria-label="Navegação"><a href="index.html">Início</a><span>/</span><a href="index.html#vitrine">iPhone</a><span>/</span><b id="crumbName"></b></nav>
+
+    <section class="pdp">
+      <div class="gallery">
+        <div class="main-img" id="mainImg"></div>
+        <div class="thumbs" id="thumbs"></div>
+      </div>
+
+      <div class="buy">
+        <div class="cond" id="pCond"></div>
+        <h1 id="pName"></h1>
+        <div class="p-rating" id="pRating"></div>
+
+        <div class="p-price">
+          <s id="pOld"></s>
+          <div class="p-pix"><strong id="pPix"></strong><span class="pix-tag">no Pix</span></div>
+          <span class="save" id="pSave"></span>
+          <p id="pCard"></p>
+        </div>
+
+        <div class="opt-group">
+          <p class="opt-label">Cor: <b id="colorName"></b></p>
+          <div class="colors" id="colors"></div>
+        </div>
+        <div class="opt-group">
+          <p class="opt-label">Armazenamento</p>
+          <div class="storages" id="storages"></div>
+        </div>
+
+        <div class="buy-btns">
+          <button class="btn btn-primary btn-lg" id="buyNow">Comprar agora</button>
+          <button class="btn btn-dark btn-lg" id="addCart">Adicionar à sacola</button>
+          <a class="btn btn-wa btn-lg" id="buyWa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm4.5 12.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1 2.7.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3z"/></svg>Comprar pelo WhatsApp</a>
+        </div>
+
+        <form class="cep" id="cepForm">
+          <label for="cep">Calcular frete e prazo</label>
+          <div class="cep-row"><input id="cep" inputmode="numeric" placeholder="00000-000" aria-label="CEP"><button class="btn btn-ghost" type="submit">Calcular</button></div>
+          <div id="cepOut"></div>
+        </form>
+
+        <ul class="perks">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg><span><b>Compra segura</b>Nota fiscal e garantia</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4 3 8l4 4M3 8h14M17 20l4-4-4-4M21 16H7"/></svg><span><b>Aceitamos seu usado</b>Como parte do pagamento</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M3 6h11v10H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg><span><b>Frete grátis</b>Para todo o Brasil</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section-sm">
+      <div class="tabs" role="tablist">
+        <button class="on" data-tab="t-specs">Especificações</button>
+        <button data-tab="t-box">O que vem na caixa</button>
+        <button data-tab="t-pay">Parcelamento</button>
+      </div>
+      <div class="tab-panel on" id="t-specs"><dl class="spec-list" id="specList"></dl></div>
+      <div class="tab-panel" id="t-box"><ul class="box-list" id="boxList"></ul></div>
+      <div class="tab-panel" id="t-pay"><div class="install" id="installTable"></div><p class="small muted">Pagamento à vista no Pix com 10% de desconto. Boleto em 1x.</p></div>
+    </section>
+
+    <section class="section-sm" id="reviews">
+      <div class="sec-head"><h2>Avaliações de clientes</h2></div>
+      <div class="reviews">
+        <div class="rev-score"><b id="revAvg"></b><div class="stars">★★★★★</div><span id="revCount"></span></div>
+        <div class="rev-list" id="revList"></div>
+      </div>
+    </section>
+
+    <section class="section" id="relatedSec">
+      <div class="sec-head"><h2>Você também pode gostar</h2>
+        <div class="rail-nav"><button data-rail="-1" aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m15 6-6 6 6 6"/></svg></button><button data-rail="1" aria-label="Próximo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m9 6 6 6-6 6"/></svg></button></div>
+      </div>
+      <div class="rail" id="related"></div>
+    </section>
+  </main>
+
+  <div class="sticky-bar" id="stickyBar">
+    <div><b id="stickyName"></b><span id="stickyPrice"></span></div>
+    <button class="btn btn-primary" id="stickyBuy">Comprar</button>
+  </div>
+
+  <footer id="footer" class="footer"></footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
